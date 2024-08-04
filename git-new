@@ -53,8 +53,8 @@ gitcommit() {
 gitconfig() {
 	git config --global alias.gi '!f() { curl -sL https://www.toptal.com/developers/gitignore/api/$@ ;}; f'
 	git config --global alias.ga '!f() { curl -sL https://gitattributes.com/api/$@ ;}; f'
-	echo "Use 'git gi Go > .gitignore'" to set gitignore file.
-	echo "Use 'git ga go,vim > .gitattributes'" to set gitattributes file.
+	echo "Use 'git gi Go > .gitignore' to set gitignore file."
+	echo "Use 'git ga go,vim > .gitattributes' to set gitattributes file."
 }
 
 dir=$(test -z "$*" && echo "." || echo "$*")
